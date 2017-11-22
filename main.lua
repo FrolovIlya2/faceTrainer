@@ -2,7 +2,6 @@ require 'torch'
 require 'cutorch'
 require 'paths'
 require 'nn'
-require 'nngraph'
 
 local DataLoader = require 'dataloader'
 local checkpoints = require 'checkpoints'
