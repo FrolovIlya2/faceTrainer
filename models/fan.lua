@@ -70,7 +70,7 @@ end
 
 
 
-function  (opt)
+function createModel(opt)
     nModules = opt.nModules
     nFeats = opt.nFeats
     nStack = opt.nStacks
@@ -89,21 +89,21 @@ function  (opt)
     model:add(Residual(nFeats,nFeats))
     model:add(Residual(nFeats,nFeats))
     model:add(Residual(nFeats,nFeats))
-    model:add(batchnorm(numIn,1e-5,false))
+    model:add(batchnorm(opt.nFeats,1e-5,false))
     model:add(relu(true))
     model:add(conv(nFeats,nFeats, 1,1))
 
     model:add(Residual(nFeats,nFeats))
     model:add(Residual(nFeats,nFeats))
     model:add(Residual(nFeats,nFeats))
-    model:add(batchnorm(numIn,1e-5,false))
+    model:add(batchnorm(opt.nFeats,1e-5,false))
     model:add(relu(true))
     model:add(conv(nFeats,nFeats, 1,1))
 
     model:add(Residual(nFeats,nFeats))
     model:add(Residual(nFeats,nFeats))
     model:add(Residual(nFeats,nFeats))
-    model:add(batchnorm(numIn,1e-5,false))
+    model:add(batchnorm(opt.nFeats,1e-5,false))
     model:add(relu(true))
     model:add(conv(nFeats,68, 1,1))
 
