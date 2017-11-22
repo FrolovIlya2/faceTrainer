@@ -1,3 +1,6 @@
+Заменяем nngraph на nn
+
+
 # How far are we from solving the 2D \& 3D Face Alignment problem? (and a dataset of 230,000 3D facial landmarks)
 
 This is the training code for 2D-FAN and 3D-FAN decribed in "How far are we from solving the 2D \& 3D Face Alignment problem? (and a dataset of 230,000 3D facial landmarks)" paper. Please visit [our](https://www.adrianbulat.com) webpage or read bellow for instructions on how to run the code.
