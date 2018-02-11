@@ -1,4 +1,3 @@
-Заменяем nngraph на nn
 
 
 # How far are we from solving the 2D \& 3D Face Alignment problem? (and a dataset of 230,000 3D facial landmarks)
